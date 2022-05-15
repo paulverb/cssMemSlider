@@ -180,3 +180,19 @@ input{
 #r4:checked ~ .text-and-controls #text-4 {
   font-size: 2rem;
 }
+
+@media (max-width: 350px) {
+  .text-and-controls {
+    flex-direction: column-reverse;
+  }
+
+  .controls {
+    justify-content: space-evenly;
+  }
+
+  .slider {
+    /* position: absolute; */
+    width: 70vw;
+    height: 70vw;
+  }  
+}
