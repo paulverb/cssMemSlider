@@ -55,3 +55,128 @@ input{
   /* height: auto;
   width: auto; */
 }
+
+.text-and-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 70vmin;
+  margin-top: 1rem;
+}
+
+.text{
+  display: flex;
+  align-self: flex-start;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.r-label {
+  /* width: 4rem;
+  height: 4rem; */
+  width: 4rem;
+  height: 4rem;
+  /* background-color: blue; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.label-span {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  /* border: 0.4rem solid black; */
+  background-color: red;
+}
+
+/* .r-label:hover {
+  cursor: pointer;
+} */
+
+#r1:checked ~ .text-and-controls #span-1 {
+  background-color: black;
+}
+
+#r2:checked ~ .text-and-controls #span-2 {
+  background-color: black;
+}
+
+#r3:checked ~ .text-and-controls #span-3 {
+  background-color: black;
+}
+
+#r4:checked ~ .text-and-controls #span-4 {
+  background-color: black;
+}
+
+#r2:checked ~ .slider .slides-container {
+  transform: translateX(-25%);
+}
+
+#r3:checked ~ .slider .slides-container {
+  transform: translateX(-50%);
+}
+
+#r4:checked ~ .slider .slides-container {
+  transform: translateX(-75%);
+}
+
+#label-1:hover #span-1 {
+  background-color: azure;
+}
+
+#label-2:hover #span-2 {
+  background-color: azure;
+}
+
+#label-3:hover #span-3 {
+  background-color: azure;
+}
+
+#label-4:hover #span-4 {
+  background-color: azure;
+}
+
+#label-1:active #span-1 {
+  background-color: gold;
+}
+
+#label-2:active #span-2 {
+  background-color: gold;
+}
+
+#label-3:active #span-3 {
+  background-color: gold;
+}
+
+#label-4:active #span-4 {
+  background-color: gold;
+}
+
+.mem-text{
+  font-size: 0;
+  transition: 0.5s;
+  margin: 0;
+}
+
+#r1:checked ~ .text-and-controls #text-1 {
+  font-size: 2rem;
+}
+
+#r2:checked ~ .text-and-controls #text-2 {
+  font-size: 2rem;
+}
+
+#r3:checked ~ .text-and-controls #text-3 {
+  font-size: 2rem;
+}
+
+#r4:checked ~ .text-and-controls #text-4 {
+  font-size: 2rem;
+}
